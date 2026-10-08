@@ -1,0 +1,86 @@
+* {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+#battlefield {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#battlefield img {
+    height: 500px;
+    width: auto;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#icons div {
+    background-color: lightsteelblue;
+    padding: 20px;
+    border: black solid 3px;
+    border-radius: 15px;
+}
+
+#icons div:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    
+}
+
+#icons img {
+    height: 100px;
+    width: auto;
+    transition: opacity 0.2s ease;
+}
+
+#restart {
+    padding-top: 50px;
+    text-align: center;
+}
+
+button {
+    font-weight: bold;
+    font-size: large;
+    padding: 20px;
+    background-color: lightsteelblue;
+    border-radius: 15px;
+    border: solid black 3px;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#icons div,
+button {
+    box-shadow: 0 6px 0 #526782;
+    cursor: pointer;
+}
+
+#icons div:active,
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #526782;
+}
